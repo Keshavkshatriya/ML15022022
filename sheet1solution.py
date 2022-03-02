@@ -48,6 +48,20 @@ color_list_1 = set(["White", "Black", "Red"])
 color_list_2 = set(["Red", "Green"])
 print(color_list_1-color_list_2)
 
+#Q8
+import string
+def ispangram(str):
+    alpha = "qwertyuiopasdfghjklzxcvbnm"
+    for char in alpha :
+        if char not in str.lower():
+            return False
+        return True
+string = input("Enter the string \n")
+if(ispangram(string)== True):
+    print("Yes")
+else :
+    print("NO")
+
 #Q9
 
 n=int(input('n :'))
